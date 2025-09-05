@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(page_title="AI Chatbot Demo",page_icon="🤖",layout="wide")
 
-st.image(r"C:/Users/areen/Documents/embedding search tool/ai-chatbot-demo/brand.jpg",width=150)
+st.image("brand.jpg",width=150)
 st.title("Demo: AI Assistant for Your Business")
 st.markdown("Demo Version - Token usage is limited by your demo token.")
 st.markdown("This is a demo showcase. Contact us to unlock unlimited chats, training on your data, and full customization!")
@@ -36,4 +36,5 @@ else:
                     st.markdown("👉 Or fill our [Email Form](https://docs.google.com/forms/d/e/1FAIpQLSdcsHT1ixLwIZhI7bJrMBWDUNhinEMouq6USDb_9ERre7sIaw/viewform?usp=dialog)")
                     st.markdown("👉 Learn more on our [Notion Page](https://www.notion.so/AI-Chatbots-That-Work-While-You-Sleep-245eb1fcbdfb80678680f57248d685c8?source=copy_link)")
         except Exception as e:
+
             st.error(f"Backend not reachable:{e}")
